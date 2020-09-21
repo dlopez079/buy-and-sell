@@ -4,6 +4,6 @@
   <p>${{ listing.price }}</p>
   <div class="buttons-container">
     <a routerLink="/edit-listing/{{ listing.id }}"><button>Edit</button></a>
-    <button (click)="onDeleteclicked(listing.id)">Delete</button>
+    <button (click)="onDeleteclicked(listingId)">Delete</button>
   </div>
 </div>
