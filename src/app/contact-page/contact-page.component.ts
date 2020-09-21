@@ -18,7 +18,7 @@ export class ContactPageComponent implements OnInit {
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id'); //This line of code is going to capture the id from the url and store it in a const called id.
     this.listing = fakeListings.find((listing) => listing.id === id); //Assign the matching fake listing to the listing variable.
-    this.message = `Hi, I'm interested in your ${this.listing.name.toLowerCase()}`;
+    this.message = `Hi, I'm interested in your ${this.listing.name.toLowerCase()}!`;
   }
   // Create a new method that will activate when the user hits the send button.
   sendMessage(): void {
