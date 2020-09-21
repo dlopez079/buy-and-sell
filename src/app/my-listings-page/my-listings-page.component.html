@@ -1,3 +1,4 @@
+<!-- Create a content box which includes the listings from the fake data.  Pull the name, description and price from the fake data for this content box.  Added a button within a buttons container that connects to the edit listing page.  Also include a button to delete that triggers the onDeletedClick method. -->
 <div class="content-box" *ngFor="let listing of listings">
   <h3>{{ listing.name }}</h3>
   <p>{{ listing.description }}</p>
@@ -7,3 +8,6 @@
     <button (click)="onDeleteClicked(listingId)">Delete</button>
   </div>
 </div>
+
+<!-- Create a button that connects to the new listings page  -->
+<a routerLink="/new-listing"> <button>Create A New Listing</button> </a>
