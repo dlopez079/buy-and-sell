@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,8 +13,16 @@ import { MyListingsPageComponent } from './my-listings-page/my-listings-page.com
 import { NewListingsPageComponent } from './new-listings-page/new-listings-page.component';
 
 @NgModule({
-  declarations: [AppComponent, ListingsPageComponent, ListingDetailPageComponent, EditListingPageComponent, ContactPageComponent, MyListingsPageComponent, NewListingsPageComponent],
-  imports: [BrowserModule, AppRoutingModule, RouterModule],
+  declarations: [
+    AppComponent,
+    ListingsPageComponent,
+    ListingDetailPageComponent,
+    EditListingPageComponent,
+    ContactPageComponent,
+    MyListingsPageComponent,
+    NewListingsPageComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, RouterModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
